@@ -1,4 +1,4 @@
-# @lyra/nexus-deployer
+# @lyra-network/nexus-deployer
 
 ## Why this repo?
 
@@ -11,7 +11,7 @@ It was forked to fix a curl issue on Windows platform (explained here : https://
 To install
 
 ```shell
-npm install @lyra/nexus-deployer --save-dev
+npm install @lyra-network/nexus-deployer --save-dev
 ```
 
 From there, you have options
@@ -23,7 +23,7 @@ From there, you have options
 ## Running with Node
 
 ```js
-var deployer = require("@lyra/nexus-deployer");
+var deployer = require("@lyra-network/nexus-deployer");
 
 var release = {
   groupId: "nexus-deployer",
@@ -50,7 +50,7 @@ deployer.deploy(release, function() {
 ## Running with Gulp
 
 ```js
-var deployer = require("@lyra/nexus-deployer");
+var deployer = require("@lyra-network/nexus-deployer");
 
 // dont forget to create a task to actually generate the artifact as assumed
 // here with the dependent 'artifacts:generate' task
@@ -86,7 +86,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks("@lyra/nexus-deployer");
+grunt.loadNpmTasks("@lyra-network/nexus-deployer");
 ```
 
 ## The "nexusDeployer" task

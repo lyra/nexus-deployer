@@ -1,5 +1,5 @@
 {
-  "name": "@lyra/nexus-deployer",
+  "name": "@lyra-network/nexus-deployer",
   "description": "Deploy artifacts with classifiers to release/snapshot maven repository.",
   "version": "0.1.9",
   "homepage": "https://github.com/lyra/nexus-deployer",
