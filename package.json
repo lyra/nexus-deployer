@@ -5,7 +5,7 @@
   "homepage": "https://github.com/lyra/nexus-deployer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lyra/nexus-deployer.git"
+    "url": "git+https://github.com/lyra/nexus-deployer.git"
   },
   "licenses": [
     {
@@ -46,5 +46,8 @@
     "test": "test"
   },
   "author": "Chris Thorne",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyra/nexus-deployer/issues"
+  }
 }
