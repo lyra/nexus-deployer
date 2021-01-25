@@ -17,8 +17,8 @@ describe('Nexus Deployer Snapshots', function () {
 
         describe('After deployment', function () {
 
-            it('12 artifacts are uploaded for snapshot', function () {
-                snapshotHistory.length.should.equal(12);
+            it('9 artifacts are uploaded for snapshot', function () {
+                snapshotHistory.length.should.equal(9);
             });
 
 
@@ -72,8 +72,8 @@ describe('Nexus Deployer Snapshots', function () {
 
         describe('After deployment', function () {
 
-            it('12 artifacts are uploaded for snapshot', function () {
-                snapshotHistory.length.should.equal(12);
+            it('9 artifacts are uploaded for snapshot', function () {
+                snapshotHistory.length.should.equal(9);
             });
 
 

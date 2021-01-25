@@ -158,12 +158,7 @@ var createAndUploadArtifacts = function(options, done) {
     var groupIdAsPath = options.groupId.replace(/\./g, "/");
     var groupArtifactPath = groupIdAsPath + "/" + options.artifactId;
 
-    uploads[pomDir + "/outer.xml"] =
-      groupArtifactPath + "/" + "maven-metadata.xml";
-    uploads[pomDir + "/outer.xml.sha1"] =
-      groupArtifactPath + "/" + "maven-metadata.xml.sha1";
-    uploads[pomDir + "/outer.xml.md5"] =
-      groupArtifactPath + "/" + "maven-metadata.xml.md5";
+
 
     var SNAPSHOT_VER = /.*SNAPSHOT$/i;
 
@@ -175,7 +170,14 @@ var createAndUploadArtifacts = function(options, done) {
         groupArtifactVersionPath + "/" + "maven-metadata.xml.sha1";
       uploads[pomDir + "/inner.xml.md5"] =
         groupArtifactVersionPath + "/" + "maven-metadata.xml.md5";
-    }
+    } else {
+      uploads[pomDir + "/outer.xml"] =
+        groupArtifactPath + "/" + "maven-metadata.xml";
+      uploads[pomDir + "/outer.xml.sha1"] =
+        groupArtifactPath + "/" + "maven-metadata.xml.sha1";
+      uploads[pomDir + "/outer.xml.md5"] =
+        groupArtifactPath + "/" + "maven-metadata.xml.md5";
+	}
 
     var remoteArtifactName = options.artifactId + "-" + options.version;
     uploads[pomDir + "/pom.xml"] =
