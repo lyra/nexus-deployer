@@ -102,7 +102,8 @@ var createAndUploadArtifacts = function(options, done) {
 
       var childProcess = exec(curlCmd, execOptions, function(error) {
         if (error) {
-          console.log(chalk.red(error));
+          const errorMasked = error.toString().replace(/-u ".*"/, "-u \"****:****\"");
+          console.log(chalk.red(errorMasked));
         }
       });
       childProcess.stdout.on("data", function(data) {
